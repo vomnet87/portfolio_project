@@ -1,0 +1,102 @@
+{
+  "id": "8f1d8ed8-9297-4062-aeac-2ba3e152571e",
+  "version": "2.0",
+  "name": "asus",
+  "url": "https://ru.store.asus.com",
+  "tests": [{
+    "id": "4f5f3dc3-88be-4841-aafe-1e4caa9a8728",
+    "name": "search",
+    "commands": [{
+      "id": "d8227254-fba4-4305-9a42-bb443034ca06",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b63d680-a8d7-4751-9eee-e6a2a698d144",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "918x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3549f97b-bf66-4d11-a915-6adf8096aa76",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=0",
+      "targets": [
+        ["linkText=0", "linkText"],
+        ["css=.menu-wishlist", "css:finder"],
+        ["xpath=//nav[@id='asus_menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/index.php?route=account/wishlist')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcc344a2-a10a-4284-a838-4adf5523e2f6",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.input-lg", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='top_search']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "193c53ed-59ea-4421-af06-bdb694c56b49",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.input-lg", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='top_search']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41436b2e-9ea3-48fa-886a-819dd63acce2",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.input-lg", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='top_search']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ноутбук ASUS ZenBook Flip 13 UX363EA-HP044T"
+    }, {
+      "id": "4873f387-5a7a-4b99-8386-57902219f7ad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ноутбук ASUS ZenBook Flip 13 UX363EA-HP044T (90NB0RZ1-M04920)",
+      "targets": [
+        ["linkText=Ноутбук ASUS ZenBook Flip 13 UX363EA-HP044T (90NB0RZ1-M04920)", "linkText"],
+        ["css=#livesearch_search_results a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбук ASUS ZenBook Flip 13 UX363EA-HP044T (90NB0RZ1-M04920)')]", "xpath:link"],
+        ["xpath=//ul[@id='livesearch_search_results']/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://ru.store.asus.com/notebooks/ultrabooks/noutbuk-asus-zenbook-flip-13-ux363ea-hp044t?keyword=Ноутбук ASUS ZenBook Flip 13 UX363EA-HP044T']", "xpath:href"],
+        ["xpath=//li[5]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбук ASUS ZenBook Flip 13 UX363EA-HP044T (90NB0RZ1-M04920)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "22b8468a-7522-4a12-96f3-c50c88f172a9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4f5f3dc3-88be-4841-aafe-1e4caa9a8728"]
+  }],
+  "urls": ["https://ru.store.asus.com/"],
+  "plugins": []
+}
